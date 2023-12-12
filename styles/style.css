@@ -1,5 +1,3 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   color: var(--text-color,#F1B2CE);
   background-color: var(--page-background-color,#000028);
@@ -9,7 +7,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+
 .cover {
   display: grid;
   padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
