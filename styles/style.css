@@ -47,7 +47,7 @@
   border-color: var(--secondary-color, #FF0070);
 }
 
-.header__theme-menu-button:hover  {
+.header__theme-menu-button:hover {
   border-color: var(--secondary-color, #FF0070);
 }
 
@@ -184,34 +184,26 @@
 
 .article {
   display: grid;
+  font-family: IBM Plex Mono;
   gap: 10px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
 }
 
 .article__title {
   color: var(--highlight-color,#000028);
-  font-family: IBM Plex Mono;
-  font-size: 18px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 130%;
 }
 
 .article__content {
   color:var(--text-color,#F1B2CE);
-  font-family: IBM Plex Mono;
-  font-size: 18px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
 }
 
 .article__title-advice { 
   color: var(--highlight-color,#000028);
-  font-family: IBM Plex Mono;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
 }
 
 .menu-link {
