@@ -11,7 +11,7 @@
 .cover {
   display: grid;
   padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  min-block-size: 100vh;
+  min-height: 100vh;
 }
 
 .header {
@@ -33,7 +33,7 @@
   padding: 0 13px;
   background-color: transparent;
   color: var(--secondary-color, #FF0070);
-  font-family: IBM Plex Mono;
+  font-family: var(--page-font-family, "IBM Plex mono");
   text-transform: lowercase;
   font-size: 18px;
   line-height: 18px;
@@ -43,6 +43,7 @@
 
 .header__theme-menu-button_active {
   border-color: var(--secondary-color, #FF0070);
+  pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
@@ -60,8 +61,8 @@
 .header__title {
   color: var(--brand-color,#DB00FF);
   text-shadow: 4px 4px 0px var(--accent-color, #FF0070);
-  font-family: IBM Plex Mono;
-  font-size: 116px;
+  font-family: var(--page-font-family, "IBM Plex mono");
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
@@ -71,7 +72,7 @@
   margin-block: 55px;
   color: var(--highlight-color, #000028);
   background: var(--accent-color, #FF0070);
-  font-family: IBM Plex Mono;
+  font-family: var(--page-font-family, "IBM Plex mono");
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -110,7 +111,7 @@
   position: absolute;
   display: inline-flex;
   align-items: center;
-  font-family: IBM Plex Mono;
+  font-family: var(--page-font-family, "IBM Plex mono");
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -124,6 +125,7 @@
 
 .rec-decor::before {
   content: "REC";
+  text-transform: uppercase;
   color: var(--accent-color, #FF0070);
   line-height: 24px;
 }
@@ -132,7 +134,7 @@
   content: "";
   display: inline-block;
   border-radius: 50%;
-  box-shadow: 0 0 2px 2px var(--accent-color, #FF0070);
+  box-shadow: 0 0 4px 2px var(--accent-color, #FF0070);
   background: var(--accent-color, #FF0070);
   inline-size: 9px;
   block-size: 9px;
@@ -168,7 +170,7 @@
 
 .title {
   color: var(--secondary-color,#FF0070);
-  font-family: IBM Plex Mono;
+  font-family: var(--page-font-family, "IBM Plex mono");
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -182,7 +184,7 @@
 
 .article {
   display: grid;
-  font-family: IBM Plex Mono;
+  font-family: var(--page-font-family, "IBM Plex mono");
   gap: 10px;
   font-size: 18px;
   font-style: normal;
@@ -248,12 +250,13 @@
 }
 
 .header__theme-menu {
-  margin-block-start: 170px;
-  margin-block-end: 70px;
+  grid-template-rows: 1fr min-content;
+  padding-inline-end: 5px;
+  margin-block: 65px;
 }
 
 .header__title {
-  font-size: 120px;
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
 }
 
 .header__paragraph {
@@ -301,14 +304,16 @@
 
 @media (width >= 1024px) {
 .header__title {
-  font-size: 157px;
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
 }
 
 .header__theme-menu {
+  grid-template-rows: 1fr min-content;
   justify-self: center;
-  margin-inline-start: 20px;
-  margin-block-start: 0;
-  margin-block-end: 215px;
+  align-self: self-start;
+  padding-inline-end: 5px;
+  margin-block-start: 0px;
+  margin-block-end: 65px;
 }
 
 .header__theme-menu-list {
