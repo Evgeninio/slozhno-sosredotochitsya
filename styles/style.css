@@ -17,8 +17,8 @@
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  min-height: 768px;
-  min-height: 100vh;
+  min-height: 668px;
+  height: 100vh;
 }
 
 .header__theme-menu {
