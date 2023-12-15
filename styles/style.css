@@ -15,12 +15,16 @@
 }
 
 .header {
-  align-items: start;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  min-height: 768px;
+  min-height: 100vh;
 }
 
 .header__theme-menu {
   justify-self: end;
-  margin-block: 65px;
+  align-self: center;
+  
 }
 
 .header__theme-menu-list {
@@ -249,12 +253,6 @@
   padding-inline-start: 0;
 }
 
-.header__theme-menu {
-  grid-template-rows: 1fr min-content;
-  padding-inline-end: 5px;
-  margin-block: 65px;
-}
-
 .header__title {
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
 }
@@ -308,12 +306,9 @@
 }
 
 .header__theme-menu {
-  grid-template-rows: 1fr min-content;
   justify-self: center;
   align-self: self-start;
   padding-inline-end: 5px;
-  margin-block-start: 0px;
-  margin-block-end: 65px;
 }
 
 .header__theme-menu-list {
