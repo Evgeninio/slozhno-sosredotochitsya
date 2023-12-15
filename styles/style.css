@@ -117,7 +117,7 @@
   font-weight: 400;
   line-height: 25px;
   z-index: -1;
-  visibility: visible;
+  visibility: var(--rec-decor-visibility, visible);
   gap: 10px;
   inset-inline-end: 20px;
   inset-block-start: 10px;
