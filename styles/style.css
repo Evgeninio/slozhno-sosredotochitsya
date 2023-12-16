@@ -62,7 +62,7 @@
 
 .header__theme-menu-button:focus-visible {
   border-block-end-color: var(--secondary-color, #FF0070);
-  padding-bottom: 5px;  
+  padding-bottom: 5px;
 }
 
 .header__title {
