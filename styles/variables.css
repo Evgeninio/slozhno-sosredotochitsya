@@ -1,6 +1,8 @@
 :root {
   --color-black: #000028;
   --color-gray: #353340;
+  --color-gray-opacity: #35334040;
+  --color-purple-opacity: #ff007040;
 
   --text-color-light: var(--color-gray, #353340);
   --background-color-light: #FFF1F7;
@@ -21,5 +23,7 @@
   --page-background-color: var(--color-black, #000028);
 
   --rec-decor-visibility: visible;
+
+  --hover-color: var(--color-purple-opacity, #ff007040);
 
 }

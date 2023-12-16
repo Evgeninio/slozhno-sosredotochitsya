@@ -3,7 +3,7 @@
   --brand-color: var(--brand-color-dark, #DB00FF);
   --secondary-color: var(--secondary-color-dark, #FF0070);
   --accent-color: var(--accent-color-dark, #FF0070);
-
+  --hover-color: var(--color-purple-opacity, #FF007040);
   --highlight-color: var(--highlight-color-dark, #000028);
   --page-background-color: var(--background-color-dark, #000028);
   --page-background-image: url("../images/cover-image-dark.png");
@@ -19,7 +19,7 @@
     --secondary-color: var(--secondary-color-dark, #FF0070);
     --accent-color: var(--accent-color-dark, #FF0070);
     --highlight-color: var(--color-black, #000028);
-
+    --hover-color: var(--color-purple-opacity, #FF007040);
     --page-background-color: var(--background-color-dark, #000028);
     --page-background-image: url("../images/cover-image-dark.png");
 

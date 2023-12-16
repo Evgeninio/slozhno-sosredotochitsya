@@ -30,7 +30,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 10px;
 }
 
 .header__theme-menu-button {
@@ -51,7 +51,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border-color: var(--secondary-color, #FF0070)
+  border-color: var(--hover-color, #FF007040);
 }
 
 .header__theme-menu-button:focus {
@@ -180,7 +180,7 @@
   font-family: var(--page-font-family, "IBM Plex mono");
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 130%;
 }
 
@@ -213,21 +213,23 @@
 
 .article__title-advice {
   color: var(--highlight-color,#000028);
+  font-weight: 400;
 }
 
 .menu-link {
   text-decoration: none;
 }
 
+.menu-link:hover {
+  border-block-end: 1px solid var(--accent-color-text);
+}
+
 .menu-link:focus {
   outline: 0;
-  text-decoration: underline;
-  text-shadow: none;
 }
 
 .menu-link:focus-visible {
   outline: 1px solid currentColor;
-  text-decoration: underline;
 }
 
 .gallery-list {
@@ -321,10 +323,12 @@
   justify-self: center;
   align-self: self-start;
   padding-inline-end: 5px;
+
 }
 
 .header__theme-menu-list {
   flex-direction: row;
+  max-width: 210px;
 }
 
 .section {

@@ -4,7 +4,7 @@
   --brand-color: var(--brand-color-light, #FFC2E6);
   --highlight-color: var(--highlight-color-light, #353430);
   --secondary-color: var(--secondary-color-light, #353430);
-
+  --hover-color: var(--color-gray-opacity, #35343040);
   --page-background-color: var(--background-color-light, #FFF1F7);
   --page-background-image: url("../images/cover-image-light.png");
 
@@ -19,7 +19,7 @@
     --brand-color: var(--brand-color-light, #FFC2E6);
     --highlight-color: var(--highlight-color-light, #353430);
     --secondary-color: var(--secondary-color-light, #353430);
-
+    --hover-color: var(--color-gray-opacity, #35343040);
     --page-background-color: var(--background-color-light, #FFF1F7);
     --page-background-image: url("../images/cover-image-light.png");
 
