@@ -73,6 +73,7 @@
 }
 
 .header__paragraph {
+  justify-self: end;
   margin-block: 55px;
   color: var(--highlight-color, #000028);
   background: var(--accent-color, #FF0070);
@@ -81,6 +82,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+  inline-size: clamp(355px, calc(100% / 2 - 10px), 364px);
+  block-size: clamp(117px, calc(100% / 2), 117px);
 }
 
 .decorated-zone {
@@ -160,7 +163,7 @@
 }
 
 .section__advice-title {
-  margin-block-end: 20px;
+  margin-block-end: 23px;
 }
 
 .section-images {
@@ -177,7 +180,7 @@
   font-family: var(--page-font-family, "IBM Plex mono");
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 130%;
 }
 
@@ -197,8 +200,10 @@
 }
 
 .article__title {
+  font-family: var(--page-font-family, "IBM Plex mono");
   color: var(--highlight-color,#000028);
   font-weight: 700;
+  font-size: 18px;
 }
 
 .article__content {
@@ -254,12 +259,14 @@
 }
 
 .header__title {
-  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  font-size: clamp(7.5rem, 5.625rem + 3.9063vw, 8.125rem);
 }
 
 .header__paragraph {
+  margin-block: 162px;
   justify-self: end;
   inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
+  block-size: clamp(117px, calc(100% / 2), 71px);
 }
 
 .rec-decor {
@@ -303,6 +310,12 @@
 @media (width >= 1024px) {
 .header__title {
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+}
+
+.header__paragraph {
+  margin-block: 115px;
+  inline-size: 491px;
+  block-size: 71px;
 }
 
 .header__theme-menu {
