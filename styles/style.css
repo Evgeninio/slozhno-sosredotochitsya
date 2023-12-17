@@ -221,7 +221,7 @@
 }
 
 .menu-link:hover {
-  border-block-end: 1px solid var(--accent-color-text);
+  border-bottom: 1px solid var(--text-color);
 }
 
 .menu-link:focus {
